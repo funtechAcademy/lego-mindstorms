@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="styles/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
+   <script src="js/scripts.js"></script>
+   <title>Bloques de Código: Motores</title>
+</head>
+<body>
+   <div id="cabecera">
+      <h1>Motores</h1>
+   </div>
+   <!-- INICIO_LOADER -->
+   <div id="pageloader">
+      <img src="img/LogoOjo_FTA.png" class="spining" width="100px">
+   </div>
+   <!-- FIN_LOADER -->
+   <div id="contenido">
+      <h2>Bloques De Código: Motores</h2>
+      <h3>Motores</h3>
+      <p class="texto">
+         Los bloques de motor hacen que los motores funcionen u obtienen información de los motores. La categoría de
+         bloques de motor contiene los bloques de motor más comunes.
+      </p>
+      <h4>Hacer funcionar el motor durante la duración</h4>
+      <p class="texto">
+         Hace funcionar un motor en sentido horario o antihorario durante un número específico de rotaciones, grados
+         o segundos.
+         <br><br>
+         La velocidad del motor se establece mediante el bloque de velocidad establecida. La velocidad
+         predeterminada es del 75%.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-1.png" width="70%" alt=""></p>
+      <h4>Hacer funcionar el motor durante la duración a la velocidad</h4>
+      <p class="texto">
+         Hace funcionar un motor durante un número específico de rotaciones, segundos o grados a una velocidad
+         específica. Un valor de velocidad negativo hace que el motor funcione en sentido antihorario.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-2.png" width="70%" alt=""></p>
+      <h4>Encendido del motor</h4>
+      <p class="texto">
+         Hace funcionar un motor en sentido horario o antihorario para siempre.
+         <br><br>
+         La velocidad del motor se establece mediante el bloque de velocidad establecida. La velocidad predeterminada
+         es del 75%.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-3.png" width="50%" alt=""></p>
+      <h4>Detener el motor</h4>
+      <p class="texto">
+         Detiene el funcionamiento de un motor. El motor frenará para que se detenga rápidamente por completo. El
+         motor no mantendrá su posicián una vez que se haya detenido.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-4.png" width="30%" alt=""></p>
+      <h4>Establecer la velocidad del motor</h4>
+      <p class="texto">
+         Establece la velocidad de uno o más motores. El rango de velocidad es de -100 a 100. Los valores negativos
+         invertirán la dirección del motor. Si no se ha especificado la velocidad, el valor predeterminado es 75%.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-5.png" width="40%" alt=""></p>
+      <h4>Establecer la posición del motor en la parada</h4>
+      <p class="texto">
+         Establece la acción que realizará el motor cuando se complete su comando actual. Se puede configurar para
+         flotar o mantener activamente la posición cuando el motor se detiene.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-6.png" width="60%" alt=""></p>
+      <h4>Encendido del motor a la velocidad</h4>
+      <p class="texto">
+         Empieza a hacer funcionar un motor a la velocidad especificada hasta que se le indica al motor que haga otra
+         cosa o el programa se detiene. Un valor de velocidad negativo hace funcionar el motor en sentido anti-horario.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-7.png" width="50%" alt=""></p>
+      <h4>Encendido del motor a la potencia</h4>
+      <p class="texto">
+         Hace funcionar un motor a un porcentaje específico de potencia hasta que se le dice al motor que haga otra
+         cosa o el programa se detiene. A diferencia de los bloques que usan la velocidad como parámetro que regula
+         la potencia del motor para mantener una velocidad especificada, este bloque mantendrá el nivel de potencia
+         constante sin regulación. Un valor de potencia negativo hace funcionar el motor en sentido antihorario.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-8.png" width="50%" alt=""></p>
+      <h4>Restablecer los grados contados del motor</h4>
+      <p class="texto">
+         Restablece el recuento de grados de un motor a "0". El recuento de grados de un motor es igual a la posición
+         relativa del motor desde donde comenzó. El recuento de grados es "0" siempre que se inicia un programa o se
+         conecta un motor a un Bloque EV3. Girar el motor en sentido horario aumenta la cuenta, mientras que girar en
+         sentido antihorario disminuye la cuenta.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-9.png" width="35%" alt=""></p>
+      <h4>Grados de motor contados</h4>
+      <p class="texto">
+         Devuelve el número de grados que ha girado un motor. El recuento de grados se establece en "0" cuando el
+         programa se inicia o se restablece mediante el bloque "Restablecer grados contados". Girar el motor en
+         sentido horario aumenta la cuenta, mientras que girar en sentido antihorario disminuye la cuenta.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-10.png" width="30%" alt=""></p>
+      <h4>Velocidad del motor</h4>
+      <p class="texto">
+         Informa de la velocidad actual del motor. El valor dado es la velocidad real del motor, no la velocidad
+         establecida por el bloque de velocidad establecida.
+      </p>
+      <p class="img_centrada"><img src="img/bloques1/bloques1-11.png" width="25%" alt=""></p>
+      <br><br>
+      <a class="texto volver" href="introduccion3.html">Volver al índice</a>
+   </div>
+   <div id="pie">
+      <h1> Fun Tech Academy - Calle Alcobendas, 23 Leganés 28914 Madrid - www.funtech.academy </h1>
+   </div>
+</body>
+</html>
