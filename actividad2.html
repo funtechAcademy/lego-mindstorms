@@ -9,11 +9,11 @@
    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
    <script src="js/scripts.js"></script>
-   <title>Giros</title>
+   <title>Rectas y Giros</title>
 </head>
 <body>
    <div id="cabecera">
-      <h1>Giros</h1>
+      <h1>Rectas y Giros</h1>
    </div>
    <!-- INICIO_LOADER -->
    <div id="pageloader">
@@ -21,38 +21,67 @@
    </div>
    <!-- FIN_LOADER -->
    <div id="contenido">
-      <h2>Giros</h2>
+      <h2>Movimiento Recto</h2>
       <p class="texto">
          Para poder mover nuestro robot en linea recta bastaría con mover los dos motores al mismo tiempo y a la 
-         misma velocidad, positiva o negativa. Pero para poder hacer giros con nuestra base tenemos que asignar 
-         velocidades distintas a los motores.
+         misma velocidad, positiva o negativa. 
+      </p>
+      <p class="img_centrada"><img src="img/actividad2/2-1.png" width="50%" alt=""></p>
+      <p class="texto">
+         Lo primero que veremos será la forma que tenemos de mover nuestros motores. Hay tres formas:
          <br><br>
-         Con la base construida se pueden hacer tres tipo sde giros distintos, cada uno de ellos lo podemos 
+         &emsp;- Por segundos: nuestros motores funcionaran durante el tiempo indicado. Cuando le indiquemos a los 
+                 motores que funcionen por segundos, tenemos que tener cuidado con la velocidad, ya que un cambio en 
+                 la misma, hará que nuestro robot se desplace más o menos distancia.
+         <br><br>
+         &emsp;- Por grados: los motores funcionaran el número de grados indicados. Son grados de giro del motor 
+                 y se suele utilizar cuando tenemos que realizar movimientos muy pequeños y muy exactos. Con este 
+                 tipo de movimiento no dependeremos de la velocidad.
+         <br><br>
+         &emsp;- Por rotaciones: cada motor hará las rotaciones que le indiquemos. Este tipo de movimiento nos 
+                 servirá cuando tengamos que hacer desplazamientos con una distancia más exacta, ya que sabiendo el 
+                 radio de nuestras ruedas y aplicando la fórmula de la circunferencia, podemos saber con exactitud 
+                 cuanto se desplaza en una rotación y por ende cuantas rotaciones nos hacen falta para llegar a 
+                 nuestro destino.
+      </p>
+      <h2>Giros</h2>
+      <p class="texto">
+         Para poder hacer giros con nuestra base tenemos que asignar velocidades distintas a los motores.
+         <br><br>
+         Con la base construida se pueden hacer tres tipos de giros distintos, cada uno de ellos lo podemos 
          utilizar según nuestras necesidades.
          <br><br>
          &emsp;- Giro pibote: es el que realizamos parando una de las ruedas y avanzando con la otra. El eje de giro 
-         se encontrará en el centro de la rueda que mantenemos parada.
+                 se encontrará en el centro de la rueda que mantenemos parada.
       </p>
-      <p class="img_centrada"><img src="img/actividadgiros/giros-1.png" width="60%" alt=""></p>
+      <p class="img_centrada"><img src="img/actividad2/2-2.png" width="55%" alt=""></p>
       <p class="texto">
-         &emsp;- Giro sobre sí mismo: es que realizamos cuando movemos una de las ruedas con velocidad positiva y la 
-         otra rueda con la velocidad inversa, es decir, con la misma velocidad pero en negativo. El eje de giro se 
-         encontrará en el centro de nuestro robot.
+         &emsp;- Giro sobre sí mismo: es el que realizamos cuando movemos una de las ruedas con velocidad positiva y 
+                 la otra rueda con la velocidad inversa, es decir, con la misma velocidad pero en negativo. El eje de 
+                 giro se encontrará en el centro del eje de las ruedas de nuestro robot.
       </p>
-      <p class="img_centrada"><img src="img/actividadgiros/giros-2.png" width="60%" alt=""></p>
+      <p class="img_centrada"><img src="img/actividad2/2-3.png" width="60%" alt=""></p>
       <p class="texto">
-         &emsp;- Giro en curva: es que realizamos cuando movemos una de las ruedas con mayor velocidad que la otra y 
-         siempre las dos o posittivas o negativas. El eje de giro dependerá de las velocidades que pongamos, pero 
-         siempre estará fuera de nuestro robot.
+         &emsp;- Giro en curva: es el que realizamos cuando movemos una de las ruedas con mayor velocidad que la otra 
+                 y siempre las dos o posittivas o negativas. El eje de giro dependerá de las velocidades que 
+                 pongamos, pero siempre estará fuera de nuestro robot.
       </p>
-      </p>
-      <p class="img_centrada"><img src="img/actividadgiros/giros-3.png" width="40%" alt=""></p>
-      <p class="texto">
+      <p class="img_centrada"><img src="img/actividad2/2-4.png" width="40%" alt=""></p>
       <h2>Retos</h2>
-         Una vez montado nuestro <a class="link_s" href="scripts_arduino/tema6.ino">link</a> y lo cargaremos como hemos aprendido.
-robot educador
-
-
+      <p class="texto">
+         Una vez montado nuestro 
+         <a class="link_s" href="https://funtechacademy.github.io/lego-mindstorms/pdf/roboteducador.pdf" target="_blank">Robot Educador</a>
+         realizaremos una serie de retos para aprender a mover nuestra base motriz.
+         <br><br>
+         Iremos de un lado a otro de la mesa cambiando las velocidades y al llegar al final volver hacia atrás.
+         <br><br>
+         Ahora nuestro robot deberá avanzar 1 metro. Lo haremos con cada una de las tres formas que tenemos para 
+         mover nuestro motor (por segundos, por grados o por rotaciones). Cuando lo hagamos por rotaciones, lo 
+         calcularemos mediante la fórmula de la circunferencia.
+         <br><br>
+         Después haremos llegar nuestro robot hasta el final de la mesa y daremos la vuelta (una vez con dada tipo de 
+         giro) para volver al punto de partida. Estos giros han de ser de 180 grados para volver por el mismo sitio.
+      </p>
       <br><br>
       <a class="texto volver" href="indexmovimiento.html">Volver al índice</a>
    </div>
