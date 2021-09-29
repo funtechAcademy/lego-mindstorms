@@ -9,11 +9,11 @@
    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
    <script src="js/scripts.js"></script>
-   <title>Sensor Giro</title>
+   <title>Girosensor</title>
 </head>
 <body>
    <div id="cabecera">
-      <h1>Sensor Giro</h1>
+      <h1>Girosensor</h1>
    </div>
    <!-- INICIO_LOADER -->
    <div id="pageloader">
@@ -21,27 +21,62 @@
    </div>
    <!-- FIN_LOADER -->
    <div id="contenido">
-      <h2>Sensor Giro</h2>
+      <h2>Girosensor</h2>
       <p class="texto">
-El Girosensor es un sensor digital que detecta el movimiento de rotación en un eje simple. Si rota el Girosensor en la dirección que indican las flechas que se encuentran en la caja del sensor, este puede detectar la razón de rotación en grados por segundo. (El sensor puede medir una razón de giro máxima de 440 grados por segundo.) Entonces, puede utilizar la razón de rotación para detectar, por ejemplo, si gira una parte del robot o si el robot se cae.
-
-Además, el Girosensor registra el ángulo de rotación total en grados. Puede utilizar este ángulo de rotación para detectar, por ejemplo, cuánto ha girado su robot. Esta función le permite programar giros (sobre el eje que está midiendo el Girosensor) con una exactitud de +/- 3 grados en un giro de 90 grados.
-
-Nota: El sensor debe estar totalmente quieto mientras se conecta al Bloque EV3. Si el Girosensor está conectado a un robot, el robot debe mantenerse quieto en su posición inicial mientras se conecta al Bloque EV3.
-
-Conexión del Girosensor:
-En el Bloque EV3, seleccione en la pantalla Aplicación de Bloque EV3 (tercera pestaña) y utilice el
-botón Centro para seleccionar Port View. Utilice un cable conector negro plano para conectar el Girosensor al Bloque EV3 mediante el Puerto 2. Asegúrese de mantener el sensor quieto mientras realiza esta operación. En la pantalla del Bloque EV3, la aplicación Port View muestra un «0» en la segunda ventana inferior izquierda, que es la ventana que presenta los valores de entrada del Puerto 2.
-
-Aún sin mover el sensor, observe la pantalla durante algunos segundos. Continuará mostrando «0»
-para el Puerto 2 con el Girosensor. En caso de que las lecturas del Girosensor no muestren constantemente «0» durante el proceso de conexión, desconecte el sensor y repita el procedimiento.
-
-Cuando la pantalla muestra constantemente «0» durante algunos segundos, experimente rotando el sensor y observe cómo cambia la lectura del ángulo. Recuerde, el Girosensor mide el cambio del ángulo solo en un eje.
-
+         El sensor de giro o girosensor nos permite conocer los grados que varía nuestra posición en cada momento. En 
+         esta actividad aprenderemos a utilizar el sensor de giro para hacer girar nuestro robor un determinado 
+         número de grados o para actuar en consecuencia a la inclinación que tengamos.
       </p>
-      <p class="img_centrada"><img src="img/actividad14/14-1.gif" width="60%" alt=""></p>
-
-
+      <p class="img_centrada"><img src="img/actividad16/16-1.gif" width="60%" alt=""></p>
+      <p class="texto">
+         El Girosensor es un sensor digital que detecta el movimiento de rotación en un eje simple. 
+      </p>
+      <p class="img_centrada"><img src="img/actividad16/16-2.png" width="25%" alt=""></p>
+      <p class="texto">
+         Si rota el Girosensor en la dirección que indican las flechas que se encuentran en la caja del sensor, este 
+         puede detectar la razón de rotación en grados por segundo (el sensor puede medir una razón de giro máxima 
+         de 440 grados por segundo.
+      </p>
+      <p class="img_centrada"><img src="img/actividad16/16-3.png" width="40%" alt=""></p>
+      <p class="texto">
+         Entonces, se puede utilizar la razón de rotación para detectar, por ejemplo, si gira una parte del robot o 
+         si el robot se cae.
+         <br><br>
+         Además, el Girosensor registra el ángulo de rotación total en grados. Se puede utilizar este ángulo de 
+         rotación para detectar, por ejemplo, cuánto ha girado tu robot. Esta función permite programar giros 
+         (sobre el eje que está midiendo el Girosensor) con una exactitud de +/- 3 grados en un giro de 90 grados.
+      </p>
+      <p class="nota">
+         Nota: El sensor debe estar totalmente quieto mientras se conecta al Bloque EV3. Si el Girosensor está 
+         conectado a un robot, el robot debe mantenerse quieto en su posición inicial mientras se conecta al Bloque 
+         EV3.
+      </p>
+      <h2>Retos</h2>
+      <p class="texto">
+         Empezaremos por montar nuestra 
+         <a class="link_s" href="https://funtechacademy.github.io/lego-mindstorms/pdf/baserover.pdf" target="_blank">Base Motriz</a>
+         a la que añadiremos el 
+         <a class="link_s" href="https://funtechacademy.github.io/lego-mindstorms/pdf/girosensor.pdf" target="_blank">Giroscopio.</a>
+      </p>
+      <h3>Reto 1</h3>
+      <p class="texto">
+         El primer reto consiste en realizar un cuadrado en la mesa. Partiendo de una de las esquinas, avanzaremos para 
+         hacer uno de los lados y haremos un giro de 90º. Esto lo repetiremos 4 veces para completar el cuadrado. En 
+         este caso, el sensor tiene que estar colocado con las flechas rojas en la cara de arriba ya que es este 
+         plano el que vamos a controlar.
+         <br><br>
+         Un ejemplo de como podemos resolver el reto es el siguiente.
+      </p>
+      <p class="img_centrada"><img src="img/actividad16/16-4.png" width="45%" alt=""></p>
+      <h3>Reto 2</h3>
+      <p class="texto">
+         El segundo reto consiste en mantener al robot en una superficie en equilibrio. Lo tendremos que programar 
+         para que si se inclina hacia adelante se mueva hacia atrás y vicersa. En este caso, el sensor tiene que 
+         estar colocado con las flechas rojas en la cara lateral ya que es este plano el que vamos a controlar.
+         <br><br>
+         Un ejemplo de como podemos resolver el reto es el siguiente.
+      </p>
+      <p class="img_centrada"><img src="img/actividad16/16-5.png" width="45%" alt=""></p>
      <br><br>
       <a class="texto volver" href="indexsensores.html">Volver al índice</a>
    </div>
