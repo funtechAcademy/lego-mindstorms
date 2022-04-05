@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="styles/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
+   <script src="js/scripts.js"></script>
+   <title>Coche Autónomo</title>
+</head>
+<body>
+   <div id="cabecera">
+      <h1>Coche Autónomo</h1>
+   </div>
+   <!-- INICIO_LOADER -->
+   <div id="pageloader">
+      <img src="img/LogoOjo_FTA.png" class="spining" width="100px">
+   </div>
+   <!-- FIN_LOADER -->
+   <div id="contenido">
+      <h2>Coche Autónomo</h2>
+      <p class="texto">
+         En este tema vamos a montar un coche autónomo.
+      </p>
+      <p class="img_centrada"><img src="img/actividad38/38-1.gif" width="60%" alt=""></p>
+      <p class="texto">
+         Construiremos un coche que sea capaz de hacer varias cosas:
+         <br><br>
+         &emsp;- Seguir un circuito (siguelíneas).
+         <br><br>
+         &emsp;- Parar cuando en ese circuito se encuentre una señal roja en la base que indicará que hay un semáforo 
+                 en rojo.
+         <br><br>
+         &emsp;- Continuar con el circuito cuando la señal roja la cambiemos por una verde, es decir, que el semáforo 
+                 se haya puesto en verde.
+         <br><br>
+         &emsp;- Aparcar cuando en el circuito se encuentre una señal azul. Podemos imprimir la siguiente imagen para 
+                 simular la plaza de aparcamiento.
+      </p>
+      <p class="img_centrada">
+         <a title="Aparcamiento" href="https://funtechacademy.github.io/lego-mindstorms/img/actividad38/38-2.png" target="_blank">
+            <img src="img/actividad38/38-2.png" width="50%" alt="">
+         </a>
+      </p>
+      <p class="texto">
+         A continuación, mostraremos un ejemplo de construcción de un coche autónomo base.
+         <br><br>
+         Para nuestro montaje, hemos utilizado la
+         <a class="link_s" href="https://funtechacademy.github.io/lego-mindstorms/pdf/baserover.pdf" target="_blank"> Base Motriz</a>
+         a la que añadiremos el 
+         <a class="link_s" href="https://funtechacademy.github.io/lego-mindstorms/pdf/color.pdf" target="_blank">Sensor De Color.</a>
+      </p>
+      <p class="texto">
+         Programaremos el coche para que siga el circuito mediante la programación del siguelíneas:
+         <br><br>
+         &emsp;- Si detecta el color blanco avanzará (girará) hacia un lado y si detecta el color negro avanzará 
+                 (girará) hacia el otro. De esta forma irá avanzando a través de la línea negra.
+      </p>
+      <p class="img_centrada"><img src="img/actividad38/38-3.gif" width="60%" alt=""></p>
+      <p class="texto">
+         &emsp;- Si detecta el color rojo, se parará.
+      </p>
+      <p class="img_centrada"><img src="img/actividad38/38-4.gif" width="60%" alt=""></p>
+      <p class="texto">
+         &emsp;- Si detecta el color verde, continuará con la marcha y el circuito.
+      </p>
+      <p class="img_centrada"><img src="img/actividad38/38-5.gif" width="60%" alt=""></p>
+      <p class="texto">
+         &emsp;- Si detecta el color azul, aparcará, esperará unos segundos y desaparcará, volviendo a realizar el 
+                 circuito.
+      </p>
+      <p class="img_centrada"><img src="img/actividad38/38-6.gif" width="60%" alt=""></p>
+      <p class="texto">
+         La programación podría quedar de la siguiente forma.
+      </p>
+      <p class="img_centrada"><img src="img/actividad38/38-7.png" width="70%" alt=""></p>
+      <p class="texto">
+         Como retos añadidos, podemos programar otros colores o sensores para que haga diferentes acciones, como 
+         minorar la velocidad cuando se encuentre un objeto a cierta distancia hasta pararse cuando esté muy cerca, 
+         etc.
+      </p>
+      <br><br>
+      <a class="texto volver" href="indexmecanica.html">Volver al índice</a>
+   </div>
+   <div id="pie">
+      <h1> Fun Tech Academy - Calle Alcobendas, 23 Leganés 28914 Madrid - www.funtech.academy </h1>
+   </div>
+</body>
+</html>
