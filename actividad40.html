@@ -9,11 +9,11 @@
    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
    <script src="js/scripts.js"></script>
-   <title>Humanoide</title>
+   <title>Coche Autónomo</title>
 </head>
 <body>
    <div id="cabecera">
-      <h1>Humanoide</h1>
+      <h1>Coche Autónomo</h1>
    </div>
    <!-- INICIO_LOADER -->
    <div id="pageloader">
@@ -21,72 +21,82 @@
    </div>
    <!-- FIN_LOADER -->
    <div id="contenido">
-      <h2>Humanoide</h2>
+      <h2>Coche Autónomo</h2>
       <p class="texto">
-         Ahora vamos a montar un humanoide.
+         En este tema vamos a montar un coche autónomo.
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-1.gif" width="60%" alt=""></p>
+      <p class="img_centrada"><img src="img/actividad40/40-1.gif" width="60%" alt=""></p>
       <p class="texto">
-         Construiremos un humanoide que sea papaz de andar.
+         Construiremos un coche que sea capaz de hacer varias cosas:
          <br><br>
-         La forma más sencilla de hacerlo es dejando el bloque EV3 a parte, unido solo por el cable, para que no 
-         aguante su peso. 
+         &emsp;- Seguir un circuito (siguelíneas).
          <br><br>
-         A continuación, mostraremos un ejemplo de construcción de un humanoide base.
+         &emsp;- Parar cuando en ese circuito se encuentre una señal roja en la base que indicará que hay un semáforo 
+                 en rojo.
          <br><br>
-         Empezaremos por montar el motor que hará de rodillas.
+         &emsp;- Continuar con el circuito cuando la señal roja la cambiemos por una verde, es decir, que el semáforo 
+                 se haya puesto en verde.
+         <br><br>
+         &emsp;- Aparcar cuando en el circuito se encuentre una señal azul. 
+         <br><br>
+         Podemos imprimir la siguiente imagen para simular la plaza de aparcamiento y los colores que tiene que detectar.
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-2.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-3.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-4.png" width="60%" alt=""></p>
+      <p class="img_centrada">
+         <a title="Aparcamiento" href="https://funtechacademy.github.io/lego-mindstorms/img/actividad40/40-2.png" target="_blank">
+            <img src="img/actividad40/40-2.png" width="50%" alt="">
+         </a>
+      </p>
       <p class="texto">
-         Ahora montaremos lo que serán las patas de nuestro robot. Tendremos que hacer 2, una para cada lado, pero no 
-         tendrán que ser iguales sino simétricas.
+         A continuación, mostraremos un ejemplo de construcción de un coche autónomo.
+         <br><br>
+         Para nuestro montaje, hemos utilizado la
+         <a class="link_s" href="https://funtechacademy.github.io/lego-mindstorms/pdf/basemotriz.pdf" target="_blank"> Base Motriz</a>
+         a la que añadiremos el 
+         <a class="link_s" href="https://funtechacademy.github.io/lego-mindstorms/pdf/sensorcolor.pdf" target="_blank">Sensor De Color.</a>
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-5.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-6.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-7.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-8.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-9.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-10.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-11.png" width="60%" alt=""></p>
       <p class="texto">
-         Unimos las dos piernas al motor por medio de los engranajes.
+         Programaremos el coche para que siga el circuito mediante la programación del siguelíneas:
+         <br><br>
+         &emsp;- Si detecta el color negro, girará un poco parando una rueda buscando el blanco si detecta el color 
+         negro hará lo contrario. De esta forma irá avanzando a través de la línea negra.
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-12.png" width="60%" alt=""></p>
+      <p class="video_centrado">
+         <video width="60%" autoplay loop muted>
+            <source src="img/actividad40/40-3.mp4" type="video/mp4">
+         </video>
+      </p>
       <p class="texto">
-         Una la engancharemos al engranaje a uno de los agujeros redondos y la otra al agujero contrario.
+         &emsp;- Si detecta el color rojo, se parará (a modo de semáforo) y si detecta el color verde continuará 
+                 siguiendo la línea negra.
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-13.png" width="60%" alt=""></p>
+      <p class="video_centrado">
+         <video width="60%" autoplay loop muted>
+            <source src="img/actividad40/40-4.mp4" type="video/mp4">
+         </video>
+      </p>
       <p class="texto">
-         Le añadimos las partes móviles que permitirán el movimiento de las piernas.
+         &emsp;- Si detecta el color azul, aparcará, esperará unos segundos y desaparcará, volviendo a realizar el 
+                 circuito siguiendo la línea negra.
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-14.png" width="60%" alt=""></p>
+      <p class="video_centrado">
+         <video width="60%" autoplay loop muted>
+            <source src="img/actividad40/40-5.mp4" type="video/mp4">
+         </video>
+      </p>
       <p class="texto">
-         Terminamos de asegurar las piernas con los dos topes.
+         La programación podría quedar de la siguiente forma.
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-15.png" width="60%" alt=""></p>
+      <p class="img_centrada"><img src="img/actividad40/40-6.png" width="50%" alt=""></p>
       <p class="texto">
-         Con esto, tendríamos terminada la parte móvil del humanoide.
+         En este caso, cuando detecta el color azul (2), hemos creado un bloque "Aparcar" donde incluiremos todos los 
+         movimientos necesarios para aparcar y desaparcar.
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-16.png" width="60%" alt=""></p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-17.png" width="60%" alt=""></p>
+      <p class="img_centrada"><img src="img/actividad40/40-7.png" width="50%" alt=""></p>
       <p class="texto">
-         Ahora dejaremos rienda suelta a nuestra imaginación para simular el resto del cuerpo.
+         Como retos añadidos, podemos programar otros colores o sensores para que haga diferentes acciones, como 
+         minorar la velocidad cuando se encuentre un objeto a cierta distancia hasta pararse cuando esté muy cerca, 
+         etc.
       </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-18.png" width="60%" alt=""></p>
-      <p class="texto">
-         Le añadimos el cableado y nos debería de quedar un montaje de este estilo.
-      </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-19.png" width="60%" alt=""></p>
-      <p class="texto">
-         En este caso lo programaremos simplemente con el movimiento lento del motor.
-      </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-20.png" width="60%" alt=""></p>
-      <p class="texto">
-         Nuestro proyecto terminado funcionaría de la siguiente forma.      
-      </p>
-      <p class="img_centrada"><img src="img/actividad39 old/39-21.gif" width="60%" alt=""></p>
       <br><br>
       <a class="texto volver" href="indexmecanica.html">Volver al índice</a>
    </div>
