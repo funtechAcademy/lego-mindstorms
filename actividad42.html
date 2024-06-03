@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="styles/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Sanchez&display=swap" rel="stylesheet">
+   <script src="js/scripts.js"></script>
+   <title>Puerta De Garaje</title>
+</head>
+<body>
+   <div id="cabecera">
+      <h1>Puerta De Garaje</h1>
+   </div>
+   <!-- INICIO_LOADER -->
+   <div id="pageloader">
+      <img src="img/LogoOjo_FTA.png" class="spining" width="100px">
+   </div>
+   <!-- FIN_LOADER -->
+   <div id="contenido">
+      <h2>Puerta De Garaje</h2>
+      <p class="texto">
+         Hoy toca construir una puerta de garaje..
+      </p>
+      <p class="img_centrada"><img src="img/actividad42/42-1.gif" width="60%" alt=""></p>
+
+
+      <p class="texto">
+         Crearemos una puerta de garaje a la que pondremos diferentes sensores para poder abrirla.
+         <br><br>
+         Necesitaremos montar un par de botones, uno para abrirla desde fuera y otro para abrirla desde dentro. La 
+         puerta no se abrirá después de pulsar el botón, sino que este botón activará algún mecanismo que hará que se 
+         abra la puerta a través de otro sensor.
+         <br><br>
+         Además, a la hora de abrirla desde fuera, también será necesario activar cualquier otro sensor para poder 
+         abrir la puerta. En nuestro caso, hemos puesto el sensor ultrasónico para que solo funcione cuando detecte el 
+         coche delante de la puerta.
+         <br><br>
+         Sin embargo, para poder abrir desde dentro, solamente con pulsar el botón serría suficiente.
+         <br><br>
+         El mecanismo que hemos implementado nosotros para abrir la puerta es que los botones lo que hacen es mover una 
+         pieza de color delante del sensor de color y eso hace que se pueda abrir la puerta.
+         <br><br>
+         A continuación, mostraremos un ejemplo de construcción de una puerta de garaje.
+      </p>
+      <p class="img_centrada">
+         <a title="Puerta De Garaje" href="https://funtechacademy.github.io/lego-mindstorms/pdf/puertagaraje.pdf" target="_blank">
+            <img src="img/actividad42/42-2.png" width="70%" alt="">
+         </a>
+      </p>
+      <p class="texto">
+         Le añadimos el cableado y tendríamos la puerta de garaje terminada.
+         <br><br>
+         En este caso la programación se complica un poco. Podría ser de esta forma.
+         <br><br>
+         Programaríamos que en el caso de pulsar cualquiera de los dos botones, se activara el motor que pone delante 
+         del sensor de color la parte verde.
+      </p>
+      <p class="img_centrada"><img src="img/actividad42/42-3.png" width="55%" alt=""></p>
+      <p class="texto">
+         En el caso del boton de fuera, programaríamos lo siguiente.
+      </p>
+      <p class="img_centrada"><img src="img/actividad42/42-4.png" width="55%" alt=""></p>
+      <p class="texto">
+         Y en el de dentro esto otro.    
+      </p>
+      <p class="img_centrada"><img src="img/actividad42/42-5.png" width="60%" alt=""></p>
+      <p class="texto">
+         Nuestro proyecto terminado funcionaría de la siguiente forma.      
+      </p>
+      <p class="video_centrado">
+         <video width="60%" autoplay loop muted>
+            <source src="img/actividad42/42-6.mp4" type="video/mp4">
+         </video>
+      </p>
+      <br><br>
+      <a class="texto volver" href="indexmecanica.html">Volver al índice</a>
+   </div>
+   <div id="pie">
+      <h1> Fun Tech Academy - Calle Alcobendas, 23 Leganés 28914 Madrid - www.funtech.academy </h1>
+   </div>
+</body>
+</html>
